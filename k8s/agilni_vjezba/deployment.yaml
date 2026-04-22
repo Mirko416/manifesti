@@ -2,21 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: moj-servis
+  name: agilni_vjezba
   namespace: agilni1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: moj-servis
+      app: agilni_vjezba
   template:
     metadata:
       labels:
-        app: moj-servis
+        app: agilni_vjezba
     spec:
       containers:
-      - name: moj-servis
-        image: git.fpmoz.sum.ba/mirko416/moj-servis:1.0
+      - name: agilni_vjezba
+        image: github.com/mirko416/agilni_vjezba:1.0
         ports:
         - containerPort: 8000
         resources:
