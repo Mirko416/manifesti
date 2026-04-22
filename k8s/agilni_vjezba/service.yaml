@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: aiglin_vjezba-svc
+  name: agilni_vjezba-svc
   namespace: agilni1
 spec:
   selector:
