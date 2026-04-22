@@ -2,21 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: agilni_vjezba
+  name: agilni-vjezba
   namespace: agilni1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: agilni_vjezba
+      app: agilni-vjezba
   template:
     metadata:
       labels:
-        app: agilni_vjezba
+        app: agilni-vjezba
     spec:
       containers:
-      - name: agilni_vjezba
-        image: github.com/mirko416/agilni_vjezba:1.0
+      - name: agilni-vjezba
+        image: github.com/mirko416/agilni-vjezba:1.0
         ports:
         - containerPort: 8000
         resources:
