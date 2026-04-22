@@ -1,0 +1,14 @@
+# k8s/moj-servis/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: moj-servis-svc
+  namespace: agilni1
+spec:
+  selector:
+    app: moj-servis
+  ports:
+  - port: 80
+    targetPort: 8000
+    protocol: TCP
+  type: NodePort
