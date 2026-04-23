@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: agilni-vjezba
-        image: github.com/mirko416/agilni-vjezba:1.0
+        image: ghcr.io/mirko416/agilni-vjezba:1.0
         ports:
         - containerPort: 8000
         resources:
